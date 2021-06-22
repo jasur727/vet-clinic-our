@@ -148,7 +148,8 @@ body{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: -30px;
+  margin-top: -34px;
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
@@ -156,12 +157,15 @@ body{
 
 .our-services__item{
   background-color: #fff;
-  padding: 157px 22px 45px 28px;
+  padding: 58px 22px 45px 29px;
   margin-right: 30px;
-  margin-top: 30px;
+  margin-top: 34px;
   width: 283px;
   border-radius: 5px 5px 0px 0px;
   transition: all 0.5s ease;
+  background-image: url("../img/bg-blue.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .our-services__item:hover{
@@ -181,26 +185,23 @@ body{
   color: #333333;
 }
 
-.our-services__icon{
-  position: relative;
-}
-
-.our-services__icon::before{
+.our-services__item::before{
   content: '';
-  position: absolute;
+  display: block;
+  background-image: url("../img/bg-blue.svg");
+  width: 86px;
   height: 78px;
-  background-repeat: no-repeat;
-  top: -95px;
+  margin-bottom: 22px;
 }
 
 .our-services__text{
-  width: 230px;
+  /* width: 230px; */
   font-family: 'Futura PT';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 42px;
+  margin-bottom: 26px;
   color: #949494;
   margin-top: 14px;
 }
@@ -214,6 +215,7 @@ body{
   color: #949494;
   padding: 15px 30px;
   border: 2px solid black;
+  display: inline-block;
   text-decoration: none;
   white-space: nowrap;
   margin-top: 26px;
