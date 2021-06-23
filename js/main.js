@@ -1,11 +1,11 @@
 var elsOpenModalButton = document.querySelector('.links__right');
-var elCloseModalButton = document.querySelector('.form__btn');
-var elModal = document.querySelector('.js-model');
+var elCloseModalButton = document.querySelector('.exit-button');
+var elModal = document.querySelector('.js-modal');
 
 elsOpenModalButton.addEventListener('click', function(){
-  elModal.classList.add('open-modal')
+  elModal.classList.add('modal-open')
 });
 
 elCloseModalButton.addEventListener('click', function(){
-elModal.classList.remove('open-modal')
+elModal.classList.remove('modal-open')
 })

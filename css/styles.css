@@ -526,145 +526,198 @@ body{
 
 /* FAQ */
 
-.faq__wrapper{
-  display: flex;
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-open{
+  display: block;
+}
+
+.modal-open .content-wrapper{
+  animation-name: slide-down;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-1200px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.form-container{
+  max-width: 860px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.faq{
-  display: block;
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  margin-top: 50px;
-  background-image: url("../img/popup.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 119px 53px 133px 53px;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-.open-modal{
-  display: block;
-}
-
-
-
-.model-diolog{
-  /* width: 850px; */
+.content-wrapper{
+  padding-bottom: 137px;
+  margin-right: -33px;
   display: flex;
-  position: relative;
-  margin-top: 50px;
-  animation-name: down;
-  animation-iteration-count: 1;
-  animation-direction: alternate;  
-
+  background-image: url(../img/popup.png);
+  background-repeat: no-repeat;
+  background-size: 850px;
+  background-position: center;
 }
 
-.faq__wrapper--heading{
-  font-family: 'Futura PT';
+.left-content__wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.exit-button{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 28px;
+  left: calc(50% - 141px);
+  cursor: pointer;
+}
+
+.button{
+  border: none;
+  background-color: #FFBD54;
+  background-image: url(../img/vector-faqs.svg);
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+
+.form-info{
+  width: 133px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   color: #333333;
-  margin: 0;
+  margin-left: 71px;
+  margin-top: 109px;
+  margin-bottom: 12px;
 }
 
-.faq__wrapper--left{
-  margin-top: 22px;
+.input-question{
+  display: flex;
+  flex-direction: column;
+  margin-left: 137px;
 }
 
-.faq__icon{
-  padding: 0;
+.input-name{
+  width: 350px;
 }
 
-.faq__item{
-  list-style: none;
-  background-color: #fff;
-  width: 238px; 
+.question-input{
+  width: 350px;
+  padding-left: 22px;
+  padding-top: 17px;
+  border: none;
+  resize: vertical;
 }
 
-.faq__link{
-  display: inline-block;
-  font-family: 'Futura PT';
+.google{
+  position: relative;
+  width: 250px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  border: 2px solid transparent;
+  background-color: #ffffff;
   text-decoration: none;
-  padding: 14px 36px 15px 68px;
-  position: relative;
-  white-space: nowrap;
+  padding: 15px 36px 15px 68px;
+  margin-bottom: 21px;
+  margin-left: 70px;
 }
 
-.faq__link::before{
-  content: '';
+.google::before{
+  content: "";
+  display: block;
   position: absolute;
+  left: 36px;
+  top: 15px;
   width: 20px;
   height: 20px;
+  background-image: url(../img/google.svg);
   background-repeat: no-repeat;
-  background-image: url("../img/google.svg");
-  left: calc(50% - 86px);
+  background-position: center;
   background-size: contain;
 }
 
-.facebook__item{
-  margin-top: 16px;
+.facebook{
+  position: relative;
+  width: 250px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+  text-decoration: none;
+  margin-left: 70px;
+  padding: 15px 35px 15px 56px;
 }
 
 .facebook::before{
-  background-image: url("../img/facebook.svg");
-  left: 32px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 22px;
+  top: 15px;
+  background-image: url(../img/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-/* .faq__wrapper--right */
-
-.faq__wrapper--right{
-  margin-left: 130px;
-}
-
-.form__right{
-  display: flex;
-  flex-direction: column;
-  width: 335px;
-}
-
-.right__heading{
-  margin: 0;
-  font-family: 'Futura PT';
+.form-heading{
+  width: 358px;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   line-height: 54px;
   color: #333333;
+  margin: 0;
+  padding: 0;
   margin-bottom: 25px;
+  padding-top: 119px;
 }
 
-.text__form{
-  padding: 15px 0 15px 22px;
-  border: none;
-}
-
-.teaxtrea{
-  max-width: 335px;
-  padding-top: 17px;
+.input-name{
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 22px;
-  margin-bottom: 27px;
-  margin-top: 21px;
+  margin-bottom: 21px;
   border: none;
 }
 
-.form__btn{
+.form-button{
   width: 193px;
-  padding: 14px 65px 14px 55px;
-  background-color: #000;
-  color: #fff;
+  margin-top: 27px;
+  padding: 15px 67px 15px 55px;
+  background-color: #000000;
   border: none;
-  border-radius: 5px;
-  margin-bottom: 120px;
+  color: #ffffff;
 }
-
