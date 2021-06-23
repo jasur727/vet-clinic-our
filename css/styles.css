@@ -526,50 +526,40 @@ body{
 
 /* FAQ */
 
+.faq__wrapper{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .faq{
-  display: none;
+  display: block;
   position: fixed;
   z-index: 99;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   margin-top: 50px;
   background-image: url("../img/popup.png");
   background-repeat: no-repeat;
   background-size: cover;
-
-  padding: 119px 71px 137px 70px;
+  padding: 119px 53px 133px 53px;
   background-color: rgba(255, 255, 255, 0.6);
 }
-.model-open{
+.open-modal{
   display: block;
 }
 
+
+
 .model-diolog{
-  width: 850px;
+  /* width: 850px; */
   display: flex;
   position: relative;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   animation-name: down;
   animation-iteration-count: 1;
   animation-direction: alternate;  
 
-}
-
-.faq::before{
-  content: '';
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-image: url('../img/x-btn.svg');
-  background-repeat: no-repeat;
-  left: calc(50% - 409px);
-  top: 15px;
 }
 
 .faq__wrapper--heading{
@@ -633,6 +623,10 @@ body{
 
 /* .faq__wrapper--right */
 
+.faq__wrapper--right{
+  margin-left: 130px;
+}
+
 .form__right{
   display: flex;
   flex-direction: column;
@@ -670,6 +664,7 @@ body{
   background-color: #000;
   color: #fff;
   border: none;
-
   border-radius: 5px;
+  margin-bottom: 120px;
 }
+
