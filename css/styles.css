@@ -62,7 +62,6 @@ body{
 
 /* FOOTER */
 .site-header--up{
-  /* display: none; */
   background-color: #F9F8F8;
   padding: 12px 0;
 }
@@ -116,7 +115,6 @@ body{
   font-size: 16px;
   line-height: 21px;
   display: flex;
-  align-items: center;  
   color: #333333;
   position: relative;
 }
@@ -223,7 +221,7 @@ body{
 
 .site-header-logo {
   position: absolute;
-  top: -42px;
+  top: -38px;
 }
 
 .header__link--icon {
@@ -246,13 +244,6 @@ body{
   color: #333333;
 }
 
-/* .bosh-qism {
-  margin-left: 120px;
-}
-
-.contact {
-  margin-right: 0;
-} */
 
 .links__right {
   list-style: none;
@@ -290,6 +281,52 @@ body{
   background-repeat: no-repeat;
   background-image: url("../img/active-fish.svg");
   left: calc(50% - 70px);
+}
+
+/* HERO */
+
+.site-hero{
+  width: 447px;
+  position: relative;
+  margin-left: 93px;  
+}
+
+.site-hero::before{
+  content: '';
+  position: absolute;
+  width: 435px;
+  height: 435px;
+  background-image: url("../img/toti-qush.png");
+  top: -105px;
+  left: calc(50% + 605px);
+
+}
+
+.hero__heading{
+  padding: 0;
+  margin: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+  margin-top: 118px;
+  margin-bottom: 21px;
+}
+
+.hero__text{
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #949494;
+  margin-bottom: 140px;
 }
 
 /* OUR SERVICES */
@@ -453,4 +490,33 @@ body{
 .bg-12::before{
   width: 77px;
   background-image: url("../img/plus-injection.svg");
+}
+
+/* FOOTER */
+
+.footer2{
+  padding: 62px 0;
+}
+
+.item__footer{
+  list-style: none;
+  margin-bottom: 14px;
+}
+
+.icon__footer{
+  padding: 0;
+}
+
+.icon__footer2{
+  padding: 0;
+  margin-left: 50px;
+}
+
+.link__footer{
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__contant{
+  display: flex;
 }
