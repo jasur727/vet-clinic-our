@@ -195,7 +195,6 @@ body{
 }
 
 .our-services__text{
-  /* width: 230px; */
   font-family: 'Futura PT';
   font-style: normal;
   font-weight: normal;
@@ -220,6 +219,7 @@ body{
   white-space: nowrap;
   margin-top: 26px;
   transition: background-color 0.5s ease, color 0.5s ease,border 0.5s ease;
+  border-radius: 3px;
 }
 
 .link__one{
