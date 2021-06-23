@@ -59,7 +59,7 @@
           </li>
         </ul>
 
-        <a class="links__right" href="#">Задать вопрос</a>
+        <button type="button" class="links__right">Задать вопрос</button>
       </div>
     </div>
   </div>
@@ -225,6 +225,41 @@
       </div>
     </section>
   </footer>
+
+  <!-- model -->
+
+  <section class="faq js-model">
+    <div class="model-diolog">
+      <div class="faq__wrapper--left">
+        <h2 class="faq__wrapper--heading">Авторизация:</h2>
+        <ul class="faq__icon">
+  
+          <li class="faq__item">
+            <a class="faq__link" href="#">Войти через Google</a>
+          </li>
+  
+          <li class="faq__item facebook__item">
+            <a class="faq__link facebook" href="#">Войти через Facebook</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="faq__wrapper--right">
+        <h1 class="right__heading">Задать вопрос</h1>
+  
+        <form class="form__right" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="text__form" type="text" name="text" placeholder="Ваше имя" aria-label="Ваше имя" required>
+  
+          <textarea name="textra" class="teaxtrea" id="textra" cols="30" rows="10"
+            placeholder="Опишите Ваш вопрос."></textarea>
+  
+          <button class="form__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

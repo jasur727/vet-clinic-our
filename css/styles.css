@@ -256,6 +256,9 @@ body{
   color: #333333;
   margin-left: auto;
   position: relative;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .links__right::before {
@@ -516,4 +519,157 @@ body{
 
 .footer__contant{
   display: flex;
+}
+
+/* model */
+
+
+/* FAQ */
+
+
+.faq{
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  background-image: url("../img/popup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 119px 71px 137px 70px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.model-open{
+  display: block;
+}
+
+.model-diolog{
+  width: 850px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  animation-name: down;
+  animation-iteration-count: 1;
+  animation-direction: alternate;  
+
+}
+
+.faq::before{
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/x-btn.svg');
+  background-repeat: no-repeat;
+  left: calc(50% - 409px);
+  top: 15px;
+}
+
+.faq__wrapper--heading{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+  margin: 0;
+}
+
+.faq__wrapper--left{
+  margin-top: 22px;
+}
+
+.faq__icon{
+  padding: 0;
+}
+
+.faq__item{
+  list-style: none;
+  background-color: #fff;
+  width: 238px; 
+}
+
+.faq__link{
+  display: inline-block;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  border: 2px solid transparent;
+  text-decoration: none;
+  padding: 14px 36px 15px 68px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.faq__link::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../img/google.svg");
+  left: calc(50% - 86px);
+  background-size: contain;
+}
+
+.facebook__item{
+  margin-top: 16px;
+}
+
+.facebook::before{
+  background-image: url("../img/facebook.svg");
+  left: 32px;
+}
+
+/* .faq__wrapper--right */
+
+.form__right{
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+}
+
+.right__heading{
+  margin: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 54px;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.text__form{
+  padding: 15px 0 15px 22px;
+  border: none;
+}
+
+.teaxtrea{
+  max-width: 335px;
+  padding-top: 17px;
+  padding-left: 22px;
+  margin-bottom: 27px;
+  margin-top: 21px;
+  border: none;
+}
+
+.form__btn{
+  width: 193px;
+  padding: 14px 65px 14px 55px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+
+  border-radius: 5px;
 }
